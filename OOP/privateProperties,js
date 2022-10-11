@@ -1,0 +1,19 @@
+function Circle(radius) {
+    let defaultLocation = { x: 0, y: 0 };
+
+    let computeOptimumLocation = function (factor) {
+        console.log("computeOptimumLocation called", factor);
+    }
+
+    this.radius = radius;
+
+    this.draw = function () {
+        computeOptimumLocation(0.1);
+        console.log(defaultLocation, this.radius);
+        console.log("draw");
+        return this;
+    }
+}
+
+const circle = new Circle(12);
+console.log(circle.draw());

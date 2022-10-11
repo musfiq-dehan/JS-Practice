@@ -1,0 +1,3 @@
+alt + shift + down arrow/up arrow = copy and move up or down
+alt + down arrow/up arrow = move up or down
+alt + mouse click (left button) = multi cursor

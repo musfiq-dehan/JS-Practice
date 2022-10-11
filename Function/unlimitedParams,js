@@ -1,0 +1,16 @@
+// function adding() {
+//     let total = 0;
+//     for (let i of arguments) {
+//         total = total + i;
+//     }
+//     return total;
+// }
+
+// console.log(adding(1, 2, 3, 4, 5));
+
+
+function discounted(discount, ...prices) {
+    const total = prices.reduce((a, b) => a + b);
+    return total * (1 - discount);
+}
+console.log(discounted(0.1, 2, 3, 4, 5, 10));
